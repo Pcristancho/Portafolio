@@ -1,0 +1,83 @@
+#portafolio button{
+    display: block; /* convierte elementos a bloques que son las imagenes*/
+    position: relative;/*para luego cuadrar otras imagnees ahi como absoultas*/
+    margin: 1rem 400px;/* para centrar imagnes y separarlas*/
+    max-width: 400px; /*cuadra imagenes a 400px max*/
+    overflow: hidden; /*esconde aqeullas parte de imagnees que se sobre salen del boton*/
+    box-shadow: 0 0 10px var(--gray2);/*coloca un borde de sombra a los botones*/
+    padding: 0;
+    border: none;
+    cursor: zoom-in;/* el cursor se pone tipo zoom in*/
+
+}
+/*ahora esto es para cuadrar las imagenes dentro de los botones*/
+#portafolio img{
+    display: block;
+    max-height: 300px;
+    max-width: 400px;
+    transition: transform ease 0.3s;/* para indicar lo dle zoom que es con transition*/
+}
+#portafolio button:hover img{
+    transform: scale(1.25); /* aqui el efecto de hacer zoom que es escalarlo
+    y como la imagne tine propiedad hiden entonces no se saldra dle botoon */
+    
+
+}
+
+#portafolio button:before{
+    content: ''; /* si o se se usa content con before asi quede vacio*/
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary); /*estoy creando un cuadro azul en el boton en la imagen*/
+    position:absolute;/* es aboslute respecto al boton que es relatibe se puso*/
+    z-index: 1; /* lo coloca al frente*/
+    top: 0;
+    left: 0;
+    transition:opacity ease .3s;
+    opacity: 0;
+
+
+}
+#portafolio button:hover::before{
+    /*cuando haga hoven en el boton, el elemento fiticio before de html cambia de opacidad, osea el cuadrado*/
+
+    opacity: 0.75;
+}
+/*ahora lo siguiente es para la letras del boton que se superpongan a eso cuando le de zoom*/
+#portafolio h4{
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: var(--white);
+    opacity: 0;
+    transition: bottom ease .3s;
+
+}
+#portafolio button:hover h4{
+    bottom: 30%;
+    opacity: 1;
+}
+#portafolio button::after{
+    content: url('../img/zoom.svg');
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 0;
+    transform: translate(-40%,-50%);
+    opacity: 0;
+    transition: top ease .3s;
+
+}
+#portafolio button:hover:after{
+    top: 40%;
+    opacity: .75;
+}
+/* .contenedor_portaf{
+    display: flex;
+    justify-content: center;
+} */

@@ -1,0 +1,78 @@
+#skillset> div{
+    display: grid;/* para definir que sea en columnas tipo grid*/
+    grid-template-columns: 1fr 1fr 1fr 1fr ; /* defino como que cada columna ocupa 1 fraccion*/
+    grid-gap: 1rem;/* creo espacio entre esos recuadros*/
+    margin: 1rem;
+}
+
+#skillset img{
+    
+    border-radius: 1rem;
+    max-width: 7rem;
+    cursor: context-menu;
+}
+#skillset>div>div{
+    position: relative;
+}
+#skillset span{
+    display: inline-block;
+    width: 120px;
+    background-color: rgba(0, 0, 0, .75);
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: .5rem;
+    position: absolute;
+    top: -32px;
+    left: 32%; /*son par acuadrarlos arriba de cada imagen incialmente */
+    opacity: 0;
+    transform:  translate(0px,20px);
+    transition:opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;/*esto hace que el span no interfiera con los elementos que tenga detras 
+    como la imagen de otro elemento de skillset como java o git  si selecciona reac */
+
+}
+#skillset>div>div:hover span{
+    opacity: 1;
+    transform: translate(0,-10px);
+}
+/* lo que sigue es lo que usa para crear una felchita al espan mirando hacia abajoi*/
+#skillset span::after{
+    content: "";/* debe tener ocntent para funcionar el after*/
+    position: absolute;
+    top: 100%; /*a 100% del padre que es span */
+    left: 50%; /*a 50% del padre que es span */
+    border-width: 5px;
+    border-style: solid;
+    /* lo que sigue es lo que hace la fecha lo anterior es posicion*/
+    border-color: rgba(0, 0, 0, .75) transparent transparent transparent;
+    /*lo que hace es define colores arriba del cuadrito, luego a la izauierda transparente , igual abajo e igual a la izquierda y asi queda */ 
+
+
+}
+
+
+#skillset #i1{
+    background-color: var(--secondary-dark);
+
+}
+#skillset #i2{
+    background-color: hsl(240, 68%, 52%);
+}
+#skillset #i3{
+    background-color: hsl(59, 100%, 50%);
+}
+#skillset #i4{
+    background-color: var(--white2);
+}
+#skillset #i5{
+    background-color: var(--black);
+}
+#skillset #i6{
+    background-color: hsla(240, 78%, 40%, 0.834);
+}
+#skillset #i7{
+    background-color: var(--black);
+}
+#skillset #i8{
+    background-color: var(--black);
+}

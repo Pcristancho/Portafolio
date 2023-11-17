@@ -1,0 +1,163 @@
+<!-- mi proyecto de HTML  -->
+<!-- pagina con experiencia y portafolio -->
+<!-- primero se declara el documento -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Perez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/fonts.css"/>
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/sections.css"> 
+    <link rel="stylesheet" href="./css/header.css"/>
+    <link rel="stylesheet" href="./css/nav.css"/>
+    <link rel="stylesheet" href="./css/portafolio.css"/>
+    <link rel="stylesheet" href="./css/skillset.css"/>
+    <link rel="stylesheet" href="./css/experience.css" />
+    <link rel="stylesheet" href="./css/contact.css"/>
+
+</head>
+<body>
+    <header>
+        <img class="circle" src="../proyecto_final/img/foto para hoja de vida.jpeg" alt="logo alrge">
+        <h1>Javier Ernesto Perez</h1>
+        <hr>
+        <h3>Software Engineer</h3>
+        <video src="../archivos_nec/html/assets/video/hero.mp4"
+         autoplay loop muted>
+        </video>
+    </header>
+    <nav id="navbar" class="open">
+      <div>
+        <a>
+            <img class="circle" src="../archivos_nec/html/assets/img/logos/small.png" alt="small logo" />
+            <span>Javier Ernesto Pérez <small>Software Engineer</small></span>
+
+        </a>
+        <button id="hamburger">☰</button>
+      </div>
+      <ul>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#skillset">Skillset</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+        
+    </nav>
+    <!-- ahora en main va el contenido principal -->
+    <main> 
+        <section id="portafolio"><!-- seccion de  portafolio-->
+            <h3>Portafolio</h3>
+            <hr/>
+            <div class="contenedor_portaf">
+                <button>
+                    <img src="../archivos_nec/html/assets/img/portfolio/python.jpg"/>
+                    <h4>Lenguaje Python</h4>
+                </button>   
+                <button>
+                    <img src="../archivos_nec/html/assets/img/portfolio/java-script1.jpg"/>
+                    <h4>JavaScript</h4>
+                </button> 
+                <button>
+                    <img src="../archivos_nec/html/assets/img/portfolio/html.jpg"/>
+                    <h4>HTML</h4>
+                </button>
+            </div>
+
+            
+        </section>
+        <section id="skillset" class="even"><!-- seccion de habilidades-->
+            <h3>Skillset</h3>
+            <hr/>
+            <div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-html.svg"id="i1" />
+                    <span class="tooltip">HTML</span>
+                </div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-css.svg" id="i2"/>
+                    <span class="tooltip">CSS</span>
+                </div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-javascript.svg"id="i3"/>
+                    <span class="tooltip">JAVASCRIPT</span>
+                </div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-git.svg"id="i4"/>
+                    <span class="tooltip">GIT</span>
+                </div>
+                <div>
+                    <img src="../proyecto_final/img/lgo_selenium.png"id="i5"/>
+                    <span class="tooltip">Selenium</span>
+
+                </div>
+                <div>
+                    <img src="./img/PostgreSQL_logo.1color_white.svg"id="i6"/>
+                    <span class="tooltip">POSTGRE SQL</span>
+                </div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-node-js.svg"id="i7"/>
+                    <span class="tooltip">NodeJS</span>
+                </div>
+                <div>
+                    <img src="../archivos_nec/html/assets/img/skillset/icons8-reaccionar.svg"id="i8"/>
+                    <span class="tooltip">React</span>
+                </div>
+            </div>
+        
+        </section>
+        <section id="experience"><!-- seccion de experiencia-->
+            <h3>Experience</h3>
+            <hr/>
+            <div>
+                <a>
+                    <img src="../proyecto_final/img/1631109627561.jpg"/>
+                    <h4>SAVNE - Digital Solutions</h4>
+                </a>
+                <a>
+                    <img src="../archivos_nec/html/assets/img/experience/bootcampx.jpg"/>
+                    <h4>Bootcamp programador x</h4>
+                </a>
+            </div>
+
+        </section>
+        <section id="contact" class="even">
+            <h3>Contact</h3>
+            <hr/>
+            <form action="https://formspree.io/f/{form_id}" method="post">
+                <label for="email">Your Email</label>
+                <input name="Email" id="email" type="email">
+                <label for="message">Your Message</label>
+                <textarea name="Email" id="message" type="text"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+        </section>
+        <nav id="social-media">
+            <a href="https://www.linkedin.com/in/javier-ernesto-perez-cristancho-130496215/">
+                <img id="linkedin" src="../archivos_nec/html/assets/img/social/linkedin.png"/>
+
+            </a>
+            <a href="https://github.com/">
+                <img id="github" src="../archivos_nec/html/assets/img/social/github.png"/>
+            </a>
+            <a href="https://www.youtube.com/">
+                <img id="youtube" src="../archivos_nec/html/assets/img/social/youtube.png"/>
+            </a>
+        </nav> 
+        <footer>
+            <p>Developed and designed by Javier Ernesto Pérez &#169 All rigths reserverd </p>
+        </footer>
+        <script src="./js/codigo.js"></script> <!--  se coloca al final para que haga todo despues de qque 
+        cargue la pagina, otra opcion posible es usar "defer" -->
+        <script src="./js/fixed.js"></script>
+
+    </main>
+</body>
+</html>  

@@ -1,0 +1,34 @@
+header{
+    padding: 5rem 0 3rem;
+    position: relative; /* para hacer el video en position absulte respecto a este¨*/
+    overflow: hidden; /*si mal no lo entiendo es para qeu si un objeto se sale del contenedor., lo faltantate se esconde para no mostrar lo faltante salido 
+    del contenedor eso se ve feo */
+    background: linear-gradient(var(--black),var(--black2));
+
+
+}
+header video{
+    position: absolute;
+    top: 50%;  /* creo que hace esto para posicionarlo inicialmente luego 
+    con el transform ya saber cuanto mover para que quede exacto al inicio en borde*/
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+
+}
+
+/* esto es para tener en cuenta si es juna resolucion menor 
+como celular o trablet PERO SOLO CONFIGURO HEADER NO LOS DEMAS FALTARIA ESO*/
+@media screen and(max-wdth:814px){
+    header{
+        width: 800px;
+    }
+}
+
+/* esta la puse para acomodar la foto*/
+header img{
+    height: 170px;
+    width: 150px;
+}
