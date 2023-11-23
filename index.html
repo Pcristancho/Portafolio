@@ -7,6 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javier Perez</title>
+    <!-- lo que sigue es para usar el modal que se descarga de npm OJO porque toca modificar el href a nuestro caso pero
+    ya indica al final cual archivo debe ser-->
+    <link rel="stylesheet" href="./node_modules/eins-modal/dist/css/eins-modal.min.css"> 
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,10 +120,21 @@
             <h3>Experience</h3>
             <hr/>
             <div>
-                <a>
+                <a data-modal-id="myModal">
                     <img src="../proyecto_final/img/1631109627561.jpg"/>
                     <h4>SAVNE - Digital Solutions</h4>
                 </a>
+                <!-- Modal -->
+                <div id="myModal" class="eins-modal">
+                    <div class="eins-modal-content">
+                    <div class="eins-modal-close"></div>
+                
+                    <!-- Your Content -->
+                    texto a colocar o imagen puse yo 
+                    
+                    <button class="eins-modal-close-button">OK</button>
+                    </div>
+                </div>
                 <a>
                     <img src="../archivos_nec/html/assets/img/experience/bootcampx.jpg"/>
                     <h4>Bootcamp programador x</h4>
@@ -159,5 +174,6 @@
         <script src="./js/fixed.js"></script>
 
     </main>
+    <script src="./node_modules/eins-modal/dist/js/eins-modal-plain.min.js"></script>
 </body>
 </html>  

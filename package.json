@@ -1,0 +1,18 @@
+{
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "description": "Mi portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Pcristancho/prueba_proy.git)"
+  },
+  "author": "javier perez",
+  "license": "ISC",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}
