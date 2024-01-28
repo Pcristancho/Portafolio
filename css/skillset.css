@@ -49,6 +49,12 @@
 
 
 }
+.contenedor_portaf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #skillset #i1{
