@@ -1,14 +1,17 @@
 #portafolio button{
     display: block; /* convierte elementos a bloques que son las imagenes*/
     position: relative;/*para luego cuadrar otras imagnees ahi como absoultas*/
-    margin: 1rem 400px;/* para centrar imagnes y separarlas*/
+    /* margin: 1rem 400px;para centrar imagnes y separarlas */
     max-width: 400px; /*cuadra imagenes a 400px max*/
     overflow: hidden; /*esconde aqeullas parte de imagnees que se sobre salen del boton*/
     box-shadow: 0 0 10px var(--gray2);/*coloca un borde de sombra a los botones*/
     padding: 0;
     border: none;
-    cursor: zoom-in;/* el cursor se pone tipo zoom in*/
+    cursor: zoom-in; /*el cursor se pone tipo zoom in */
 
+}
+.buttonPrevisual{
+    margin: 1rem 400px;/* para centrar imagnes y separarlas*/
 }
 /*ahora esto es para cuadrar las imagenes dentro de los botones*/
 #portafolio img{
@@ -77,6 +80,9 @@
     top: 40%;
     opacity: .75;
 }
+
+
+
 /* .contenedor_portaf{
     display: flex;
     justify-content: center;
