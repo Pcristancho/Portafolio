@@ -50,10 +50,19 @@
 
 }
 .contenedor_portaf{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* display: flex;
+    flex-direction: column; */
     justify-content: center;
     align-items: center;
+}
+.cuadricula{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 

@@ -9,7 +9,7 @@
 //  //se hara una funcion que hace toggle con la intencion de agregar o quitar la clase
 //  cada vez que se pulsa al boton de hamburguesa osea del nav
 
-// .---------------------- CODIGO PARA QEU FUNCIONE EL DESPLIEGUE DEL NAVEGADOR (hamburguesa)---------------
+// .---------------------- CODIGO PARA QUE FUNCIONE EL DESPLIEGUE DEL NAVEGADOR (hamburguesa)---------------
 (function () {
     let navbar=document.querySelector('#navbar');
     let hamburger=document.querySelector('#hamburger');
